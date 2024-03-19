@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Catalog",
+    "path": "/Catalog",
+    "component": "/home/joao/Documentos/library-system/pages/Catalog.vue",
+    "chunkName": "pages/Catalog",
+    "_name": "_c33da23a"
+  },
+  {
+    "name": "Home",
+    "path": "/Home",
+    "component": "/home/joao/Documentos/library-system/pages/Home.vue",
+    "chunkName": "pages/Home",
+    "_name": "_aeff46f6"
+  },
+  {
+    "name": "Login-Employee",
+    "path": "/Login-Employee",
+    "component": "/home/joao/Documentos/library-system/pages/Login-Employee.vue",
+    "chunkName": "pages/Login-Employee",
+    "_name": "_cf8edd50"
+  },
+  {
+    "name": "Painel",
+    "path": "/Painel",
+    "component": "/home/joao/Documentos/library-system/pages/Painel.vue",
+    "chunkName": "pages/Painel",
+    "_name": "_abac61ba"
+  },
+  {
+    "name": "Register",
+    "path": "/Register",
+    "component": "/home/joao/Documentos/library-system/pages/Register.vue",
+    "chunkName": "pages/Register",
+    "_name": "_0f041d49"
+  }
+]
