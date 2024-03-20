@@ -29,7 +29,42 @@
                             <div class="status" :class="{ 'indisponivel': !card.disponivel }">
                                 <span>{{ card.disponivel ? 'DISPONÍVEL' : 'INDISPONÍVEL' }}</span>
                                 <div v-if="card.disponivel" class="status">
-                                    <button class="btn btn-primary mt-2 w-100">Emprestar</button>
+                                    <button type="button" class="btn btn-primary mt-2 w-100" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
+                                        EMPRESTAR
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                                aria-labelledby="pills-home-tab" tabindex="0">
+                                                <div class="form-group">
+                                                    <label for="nome">NOME</label>
+                                                    <input type="nome" class="form-control" name="nome" id="nome"
+                                                        placeholder="SEU NOME" autocomplete="nome" />
+                                                </div>
+                                               <div class="info">
+                                                <span>DATA-ATUAL: 19/04/2024</span>
+                                                <span>DATA-DEVOLUÇÃO: 30/04/2024</span>
+                                               </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -116,6 +151,14 @@ export default {
             }
         }
 
+    }
+
+    .info{
+        span{
+            display: block;
+            font-weight:700;
+            margin: 10px 0;
+        }
     }
 }
 </style>
