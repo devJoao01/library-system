@@ -3,12 +3,11 @@
         <v-container>
             <div class="content">
                 <div class="logo">
-                    <NuxtLink to="/"><img src="../static/logo.png" alt="Descrição da imagem" width="60"
-                            height="60" />
+                    <NuxtLink to="/"><img src="../static/logo.png" alt="Descrição da imagem" width="60" height="60" />
                     </NuxtLink>
                 </div>
                 <nav>
-                    <NuxtLink to="/" exact :class="{ active: isActive('/') }">Example</NuxtLink>
+                    <NuxtLink to="/Profile" exact :class="{ active: isActive('/') }">PERFIL</NuxtLink>
                 </nav>
             </div>
         </v-container>
@@ -47,7 +46,9 @@ header {
             >a {
                 text-decoration: none;
                 position: relative;
-                font-size: 15px;
+                font-size: 20PX;
+                font-weight: 700;
+                color: #000;
 
                 &::before {
                     content: "";

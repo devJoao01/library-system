@@ -7,13 +7,6 @@
     "_name": "_c33da23a"
   },
   {
-    "name": "Home",
-    "path": "/Home",
-    "component": "/home/joao/Documentos/library-system/pages/Home.vue",
-    "chunkName": "pages/Home",
-    "_name": "_aeff46f6"
-  },
-  {
     "name": "Login-Employee",
     "path": "/Login-Employee",
     "component": "/home/joao/Documentos/library-system/pages/Login-Employee.vue",
@@ -26,6 +19,13 @@
     "component": "/home/joao/Documentos/library-system/pages/Painel.vue",
     "chunkName": "pages/Painel",
     "_name": "_abac61ba"
+  },
+  {
+    "name": "Profile",
+    "path": "/Profile",
+    "component": "/home/joao/Documentos/library-system/pages/Profile.vue",
+    "chunkName": "pages/Profile",
+    "_name": "_35fddf1a"
   },
   {
     "name": "Register",

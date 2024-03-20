@@ -4,7 +4,8 @@
             <div class="search-box">
                 <div class="row">
                     <div class="col-lg-8 component">
-                        <input type="text" name="search" class="input-search" id="search" placeholder="Pesquisar Livros">
+                        <input type="text" name="search" class="input-search" id="search"
+                            placeholder="Pesquisar Livros">
                         <button class="btn">pesquisar</button>
                     </div>
                     <div class="col-lg-4">
@@ -19,12 +20,18 @@
             </div>
             <div class="row">
                 <div class="col-lg-4" v-for="(card, index) in cards" :key="index">
-                    <div class="card">
+                    <div class="card" :class="{ 'indisponivel': !card.disponivel }">
                         <div class="card-thumb">
                             <img src="../static/book.jpeg" alt="book">
                         </div>
                         <div class="card-body">
                             <p v-html="card.body"></p>
+                            <div class="status" :class="{ 'indisponivel': !card.disponivel }">
+                                <span>{{ card.disponivel ? 'DISPONÍVEL' : 'INDISPONÍVEL' }}</span>
+                                <div v-if="card.disponivel" class="status">
+                                    <button class="btn btn-primary mt-2 w-100">Emprestar</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -43,6 +50,9 @@ export default {
     async created() {
         try {
             const response = await this.$axios.$get('https://jsonplaceholder.typicode.com/posts');
+            response.forEach(card => {
+                card.disponivel = Math.random() < 0.5;
+            });
             this.cards = response.slice(0, 6);
         } catch (error) {
             console.error('Error fetching data:', error);
@@ -50,7 +60,6 @@ export default {
     }
 }
 </script>
-
 
 <style scoped lang="scss">
 .content-page {
@@ -80,14 +89,33 @@ export default {
         }
     }
 
-    .card{
+    .card {
         border: none;
 
-        .card-thumb{
+        .card-thumb {
             display: flex;
             justify-content: center;
             margin-bottom: 20px;
         }
+
+        .card-body {
+            .status {
+                span {
+                    display: block;
+                    padding: 3px;
+                    text-align: center;
+                    border-radius: 30px;
+                    color: #fff;
+                    background-color: #008000;
+                }
+            }
+
+            .status.indisponivel span {
+                background-color: #FF0000;
+
+            }
+        }
+
     }
 }
 </style>

@@ -5,9 +5,9 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _c33da23a = () => interopDefault(import('../pages/Catalog.vue' /* webpackChunkName: "pages/Catalog" */))
-const _aeff46f6 = () => interopDefault(import('../pages/Home.vue' /* webpackChunkName: "pages/Home" */))
 const _cf8edd50 = () => interopDefault(import('../pages/Login-Employee.vue' /* webpackChunkName: "pages/Login-Employee" */))
 const _abac61ba = () => interopDefault(import('../pages/Painel.vue' /* webpackChunkName: "pages/Painel" */))
+const _35fddf1a = () => interopDefault(import('../pages/Profile.vue' /* webpackChunkName: "pages/Profile" */))
 const _0f041d49 = () => interopDefault(import('../pages/Register.vue' /* webpackChunkName: "pages/Register" */))
 
 const emptyFn = () => {}
@@ -26,10 +26,6 @@ export const routerOptions = {
     component: _c33da23a,
     name: "Catalog"
   }, {
-    path: "/Home",
-    component: _aeff46f6,
-    name: "Home"
-  }, {
     path: "/Login-Employee",
     component: _cf8edd50,
     name: "Login-Employee"
@@ -37,6 +33,10 @@ export const routerOptions = {
     path: "/Painel",
     component: _abac61ba,
     name: "Painel"
+  }, {
+    path: "/Profile",
+    component: _35fddf1a,
+    name: "Profile"
   }, {
     path: "/Register",
     component: _0f041d49,

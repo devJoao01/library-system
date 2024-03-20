@@ -181,6 +181,116 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-notification">
+                                ENVIAR NOTIFICAÇÃO
+                            </a>
+                            <div class="modal fade" id="modal-notification" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">ENVIAR NOTIFICAÇÃO
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul class="solicitation">
+                                                <li>
+                                                    <div class="name">
+                                                        <span>FULANO</span>
+                                                    </div>
+                                                    <div class="response">
+                                                        <div class="aprove">
+                                                            <button type="button" class="btn btn-primary">ENVIAR
+                                                                NOTIFICAÇÃO</button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal-relatorio">
+                                GERAR RELATORIOS
+                            </a>
+                            <div class="modal fade" id="modal-relatorio" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">GERAR RELATORIOS
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <button class="nav-link active" id="nav-home-tab"
+                                                        data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+                                                        role="tab" aria-controls="nav-home"
+                                                        aria-selected="true">LIVROS</button>
+                                                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                                        data-bs-target="#nav-profile" type="button" role="tab"
+                                                        aria-controls="nav-profile"
+                                                        aria-selected="false">USUARIOS</button>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                                    aria-labelledby="nav-home-tab" tabindex="0">
+                                                    <ul class="solicitation mt-3">
+                                                        <li>
+                                                            <div class="name">
+                                                                <span>ARTE DA GUERRA</span>
+                                                            </div>
+                                                            <div class="response">
+                                                                <div class="aprove">
+                                                                    <button type="button" class="btn btn-primary">GERAR
+                                                                        RELATORIO</button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                                    aria-labelledby="nav-profile-tab" tabindex="0">
+                                                    <ul class="solicitation mt-3">
+                                                        <li>
+                                                            <div class="name">
+                                                                <span>FULANO</span>
+                                                            </div>
+                                                            <div class="response">
+                                                                <div class="aprove">
+                                                                    <button type="button" class="btn btn-primary">GERAR
+                                                                        RELATORIO</button>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
