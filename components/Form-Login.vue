@@ -34,7 +34,9 @@
                             <div id="pass-error"></div>
                         </div>
                         <div class="form-group submit mt-3" style="display: flex; align-items: center; gap: 20px;">
-                            <button type="submit">Entrar</button>
+                            <NuxtLink to="/Catalog">
+                                Entrar
+                            </NuxtLink>
                             <NuxtLink to="/Register">
                                 Registrar-se
                             </NuxtLink>
@@ -57,7 +59,9 @@
                             <div id="pass-error"></div>
                         </div>
                         <div class="form-group submit mt-3" style="display: flex; align-items: center; gap: 20px;">
-                            <button type="submit">Entrar</button>
+                            <NuxtLink to="/Painel">
+                                Entrar
+                            </NuxtLink>
                             <NuxtLink to="/Register">
                                 Registrar-se
                             </NuxtLink>
@@ -105,16 +109,17 @@ form {
     }
 }
 
-.form-group button {
+.form-group a {
     background-color: #000;
     color: #fff;
     padding: 7px 17px;
     transition: all .3s ease;
     border-radius: 3px;
     font-weight: 700;
+    text-decoration: none;
 }
 
-.form-group button:hover {
+.form-group a:hover {
     background-color: #dcdcdd;
     color: #000;
 }
@@ -125,7 +130,7 @@ form {
         font-size: 16px;
     }
 
-    .form-group button {
+    .form-group a {
         width: 100%;
     }
 }

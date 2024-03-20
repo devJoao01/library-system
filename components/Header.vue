@@ -3,7 +3,7 @@
         <v-container>
             <div class="content">
                 <div class="logo">
-                    <NuxtLink><img src="../static/logo.png" alt="Descrição da imagem" width="60" height="60" />
+                    <NuxtLink to="/"><img src="../static/logo.png" alt="Descrição da imagem" width="60" height="60" />
                     </NuxtLink>
                 </div>
                 <nav>

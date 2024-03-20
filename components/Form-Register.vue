@@ -8,12 +8,12 @@
                 <div class="form-group">
                     <label for="name">Nome</label>
                     <input type="text" class="form-control" v-model="name" placeholder="Nome" minLength="3"
-                        autocomplete="name" required />
+                        autocomplete="name"  />
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail</label>
                     <input type="email" class="form-control" v-model="email" placeholder="E-mail" autocomplete="email"
-                        required />
+                         />
                 </div>
                 <div class="form-group">
                     <div class="password">
@@ -25,7 +25,7 @@
                 </div>
                 <div class="form-group">
                     <label for="user-type">Tipo de Cadastro</label>
-                    <select v-model="userType" class="form-control" required>
+                    <select v-model="userType" class="form-control" >
                         <option value="">Selecione o tipo de usuário</option>
                         <option value="cliente">Cliente</option>
                         <option value="funcionario">Funcionário</option>
@@ -33,16 +33,16 @@
                 </div>
                 <div class="form-group" v-if="userType === 'funcionario'">
                     <label for="funcionario-id">ID do Funcionário</label>
-                    <input type="text" class="form-control" required v-model="funcionarioId"
+                    <input type="text" class="form-control"  v-model="funcionarioId"
                         placeholder="ID do Funcionário" />
                 </div>
                 <div class="form-group">
                     <label for="tel">Telefone</label>
                     <input type="tel" v-model="tel" class="form-control" placeholder="Telefone" minLength="14"
-                        autocomplete="tel" required />
+                        autocomplete="tel"  />
                 </div>
                 <div class="form-group submit">
-                    <button type="submit">Registre-se</button>
+                   <NuxtLink to="/Login-Employee">Registre-se</NuxtLink>
                 </div>
             </form>
         </div>
@@ -91,16 +91,17 @@ form {
     padding: 120px 0;
 }
 
-.form-group button {
+.form-group a {
     background-color: #000;
     color: #fff;
     padding: 7px 17px;
     transition: all .3s ease;
     border-radius: 3px;
+    text-decoration: none;
     font-weight: 700;
 }
 
-.form-group button:hover {
+.form-group a:hover {
     background-color: #dcdcdd;
     color: #000;
 }
@@ -111,7 +112,7 @@ form {
         font-size: 16px;
     }
 
-    .form-group button {
+    .form-group a {
         width: 100%;
     }
 }
