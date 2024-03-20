@@ -63,6 +63,7 @@ export default {
         background-color: #efefef;
         height: 150px;
         width: 100%;
+        right:0;
         z-index: -1;
     }
 

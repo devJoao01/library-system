@@ -1,0 +1,17 @@
+{
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "FormLogin": {
+    "description": "Auto imported from components/Form-Login.vue"
+  },
+  "FormRegister": {
+    "description": "Auto imported from components/Form-Register.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "SocialMedia": {
+    "description": "Auto imported from components/Social-Media.vue"
+  }
+}

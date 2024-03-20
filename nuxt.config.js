@@ -2,6 +2,10 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: 'static',
+  router: {
+    base: '/library-system/',
+  },
   head: {
     titleTemplate: '%s - frontend-nuxt',
     title: 'frontend-nuxt',
